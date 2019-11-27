@@ -148,6 +148,11 @@ def studentInfo(list):
     for y in list :
         print(y.printinfo())
 #7
+allAvg=[]
+for student in StudentsList:
+    allAvg.append(student.getAverage())
+highestAvg=reduce(lambda x,y: x if x>y else y,allAvg)
+print(highestAvg)
 
 
 #8
