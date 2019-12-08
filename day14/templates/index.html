@@ -9,13 +9,13 @@
     {% if marks >= 90 %}
         <h1>got A</h1>
 
-    {% elif marks > 90 and marks >= 80 %}
+    {% elif marks < 90 and marks >= 80 %}
         <h1>got B</h1>
 
-    {% elif marks > 80 and marks >= 70 %}
+    {% elif marks < 80 and marks >= 70 %}
         <h1>got C</h1>
 
-    {% elif marks > 70 and marks >= 60 %}
+    {% elif marks < 70 and marks >= 60 %}
         <h1>got D</h1>
 
     {% else %}
